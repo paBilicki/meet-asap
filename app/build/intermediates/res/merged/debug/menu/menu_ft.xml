@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_close_session"
+        android:icon="@drawable/ri_menu_close_ft"
+        android:title="@string/menu_close_session"/>
+
+</menu><!-- From: file:/C:/workspace/android/MeetASAP/app/src/main/res/menu/menu_ft.xml -->

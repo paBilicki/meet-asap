@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application -->
+    <string name="app_name">RCS RI</string>
+    <string name="menu_about">About</string>
+    <string name="label_ab_not_found">The address book is not found, launch it manually from your device home screen.</string>
+
+    <!-- Commons -->
+    <string name="label_service_not_available">The service is not available. Please retry later.</string>
+    <string name="label_confirm_close">Do you want to close the session on quit?</string>
+    <string name="menu_close_session">Quit</string>
+    <string name="menu_clear_log">Clear log</string>
+    <string name="label_file_size">Size: %1$s Kb</string>
+    <string name="label_command_in_progress">Command in progress...</string>
+    <string name="label_session_not_found">Session not found</string>
+    <string name="label_api_failed">Call API method has failed</string>
+    <string name="label_api_not_compatible">API is not compatible</string>
+    <string name="label_api_unavailable">RCS service not available</string>
+    <string name="label_api_disconnected">RCS service disconnected</string>
+    <string name="label_api_disabled">RCS service disabled</string>
+    <string name="label_ok">OK</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="title_msg">Information</string>
+    <string name="label_accept">Accept</string>
+    <string name="label_decline">Decline</string>
+    <string name="label_refresh">Refresh</string>
+    <string name="label_from_args">From: %s</string>
+    <string name="label_with_args">With: %s</string>
+    <string name="label_invitation_failed">Invitation has failed</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="label_select">Select</string>
+    <string name="label_load_log_failed">Database access has failed</string>
+    <string name="label_log_empty">No entry</string>
+    <string name="label_incoming">incoming</string>
+    <string name="label_outgoing">outgoing</string>
+    <string name="label_direction_unknown">unknown direction</string>
+    <string name="label_state_unknown">unknown</string>
+    <string name="label_reason_unknown">unknown</string>
+    <string name="label_state_delivered_at">Delivered at %s</string>
+    <string name="label_state_displayed_at">Displayed at %s</string>
+    <string name="label_status">Status: %s</string>
+    <string name="label_reason_code_args">Reason: %s</string>
+    <string name="label_reason_code">Reason:</string>
+    <string name="label_session_state">State: %s</string>
+    <string name="label_session_reason">Reason: %s</string>
+    <string name="label_session_date">Date: %s</string>
+    <string name="label_direction">Direction: %s</string>
+    <string name="label_filename">File: %s</string>
+    <string name="label_filesize">Size: %s bytes</string>
+    <string name="label_progress_status">Status:</string>
+    <string name="label_progress_bar">Progress:</string>
+    <string name="label_file">Selected file:</string>
+    <string name="label_size">Size:</string>
+    <string name="label_receive_image">Received image %s</string>
+    <string name="label_remote">Remote contact:</string>
+    <string name="label_select_file">Select file</string>
+    <string name="label_invalid_contact">Invalid contact %s</string>
+    <string name="label_invalid_contacts">Invalid list of participants</string>
+    <string name="label_uninitialized_contact">+33XXXXXXX</string>
+    <string name="label_uninitialized_text">blah, blah, blah</string>
+    <string name="label_uninitialized_date">date</string>
+    <string name="label_uninitialized_filename">filename</string>
+    <string name="label_uninitialized_filesize">filesize</string>
+    <string name="label_uninitialized_direction">direction</string>
+    <string name="error_api_permission_denied">RCS API permission denied</string>
+
+    <!-- About menu -->
+    <string name="label_about_title">Reference Implementation</string>
+    <string name="label_about_release">Release: %s</string>
+    <string name="label_about_api">API release: %s</string>
+
+    <!-- Quick contact badge -->
+    <string name="label_quick_chat">Chat</string>
+
+    <!-- Contacts API -->
+    <string name="menu_contacts">Contacts</string>
+    <string name="menu_address_book">Native address book</string>
+    <string name="menu_list_rcs_contacts">All RCS contacts</string>
+    <string name="menu_list_online_contacts">Online RCS contacts</string>
+    <string name="menu_list_supported_contacts">Contacts supporting a service</string>
+    <string name="label_ext_tag">Extension tag:</string>
+    <string name="menu_contact_vcard">Contact visit card</string>
+    <string name="label_vcard">Visit card:</string>
+    <string name="label_show_vcard">Show card</string>
+    <string name="menu_blocking_contact">Block contact</string>
+    <string name="label_block">Block</string>
+    <string name="label_unblock">Unblock</string>
+    <string name="label_contact_blocked">%s has been blocked</string>
+    <string name="label_contact_unblocked">%s has been unblocked</string>
+
+    <!-- Capabilities menu -->
+    <string name="menu_capabilities">Capabilities</string>
+    <string name="menu_my_capabilities">My capabilities</string>
+    <string name="menu_capabilities_request">Request capabilities</string>
+    <string name="menu_refresh_capabilities">Refresh all capabilities</string>
+    <string name="menu_capabilities_log">Capabilities log</string>
+    <string name="label_refresh_failed">Could not refresh contacts</string>
+    <string name="label_refresh_success">Contacts will been refreshed in background</string>
+    <string name="label_capabilities">Capabilities:</string>
+    <string name="label_refresh_all_capabilities">This command permits to force an update of capabilities for each contact in the address book. This may take a long time if there is a lof of contacts.</string>
+    <string name="label_capabilities_video">Video sharing</string>
+    <string name="label_capabilities_image">Image sharing</string>
+    <string name="label_capabilities_ft">File transfer</string>
+    <string name="label_capabilities_im">IM session</string>
+    <string name="label_capabilities_extensions">Extensions:</string>
+    <string name="label_request_in_background">Request has been sent in background for %s</string>
+    <string name="label_capabilities_empty">No capabilities</string>
+    <string name="label_contact">Contact %s</string>
+    <string name="label_capabilities_geolocation_push">Geolocation push</string>
+    <string name="label_capabilities_ip_voice_call">IP voice call</string>
+    <string name="label_capabilities_ip_video_call">IP video call</string>
+    <string name="label_automata">Automata:</string>
+    <string name="label_capabilities_timestamp">Last refresh:</string>
+    <string name="label_capabilities_valid">Valid:</string>
+    <string name="label_no_capabilities">No capabilities for %s</string>
+
+    <!-- Messaging menu -->
+    <string name="menu_messaging">Messaging</string>
+    <string name="menu_file_transfer">File transfer</string>
+    <string name="menu_chat">Chat</string>
+
+    <!-- File transfer menu -->
+    <string name="menu_transfer_file">Transfer a file</string>
+    <string name="menu_file_transfer_log">File transfer log</string>
+    <string name="title_recv_file_transfer">File transfer invitation</string>
+    <string name="title_file_transfer">File transfer</string>
+    <string name="label_transfer_failed">Transfer failed (%1$s)</string>
+    <string name="label_transfer_aborted">Transfer aborted (%1$s)</string>
+    <string name="label_transfer_cancelled">File transfer session has been cancelled</string>
+    <string name="label_transfer_rejected">Transfer rejected (%1$s)</string>
+    <string name="label_pause_transfer">Pause</string>
+    <string name="label_resume_transfer">Resume</string>
+    <string name="label_pause_failed">Pause of File Transfer has failed</string>
+    <string name="label_resume_failed">Resume of File Transfer has failed</string>
+    <string name="label_transfer_failed_too_big">Transfer is aborted because file is too big</string>
+    <string name="label_transfer_failed_capacity_too_small">Not enough free space on device storage for File Transfer</string>
+    <string name="label_transfer_session_has_expired">Session has expired (timeout or any other error)</string>
+    <string name="label_ft_state_changed">%1$s (%2$s)</string>
+    <string name="label_ft_from_size">From: %1$s\nSize: %2$s Kb</string>
+    <string name="menu_ft_config">File transfer configuration</string>
+    <string name="label_ft_WarnSize">File size warning:</string>
+    <string name="label_ft_MaxSize">Max file size:</string>
+    <string name="label_ft_isAutoAccept">AA enabled:</string>
+    <string name="label_ft_isAutoAcceptModeChangeable">AA changeable:</string>
+    <string name="label_ft_isAutoAcceptInRoaming">AA enabled in roaming:</string>
+    <string name="label_MaxFileTransfers">Max file transfers:</string>
+    <string name="label_GroupFileTransferSupported">Group supported:</string>
+    <string name="menu_file_transfer_config">File transfer service configuration</string>
+    <string name="label_ft_ImageResizeOption">Image resize option:</string>
+    <string name="label_resend_failed">File transfer resend failed</string>
+    <string name="label_expiration">Expiration:</string>
+    <string name="label_expiration_args">Expiration: %s</string>
+    <string name="label_ft_start_file_transfer">Start transfer</string>
+    <string name="label_ft_filesize">Size:</string>
+    <string name="label_ft_not_allowed">Not allowed to transfer file(s)</string>
+    <string name="title_multi_file_transfer">Multiple file transfer</string>
+    <string name="label_delete_ft_failed">Failed to delete the file transfer</string>
+
+    <!-- Chat menu -->
+    <string name="menu_initiate_chat">Initiate single chat</string>
+    <string name="menu_initiate_group_chat">Initiate group chat</string>
+    <string name="menu_chat_log">Chat log</string>
+    <string name="menu_chat_config">Chat service configuration</string>
+    <string name="menu_group_chat_log">Group chat log</string>
+    <string name="label_invite">Invite</string>
+    <string name="title_recv_chat">Chat from %s</string>
+    <string name="title_recv_group_chat">Group chat from %s</string>
+    <string name="title_group_chat">Group chat</string>
+    <string name="title_chat">Chat with %s</string>
+    <string name="title_chat_exit">Are you sure to quit the session?</string>
+    <string name="label_chat_leave_failed">Leave group chat has failed</string>
+    <string name="label_chat_aborted">Chat session aborted (%1$s)</string>
+    <string name="label_chat_rejected">Chat session rejected (%1$s)</string>
+    <string name="menu_insert_smiley">Smiley</string>
+    <string name="menu_participants">Participants</string>
+    <string name="menu_add_participant">Add participant</string>
+    <string name="label_send_im_failed">Send IM has failed</string>
+    <string name="label_chat_failed">Chat session failed (%1$s)</string>
+    <string name="label_contacts">Contacts:</string>
+    <string name="label_contact_is_composing">%1$s is typing...</string>
+    <string name="label_select_contacts">Select contacts</string>
+    <string name="label_chat_initiation_canceled">Chat session has been canceled</string>
+    <string name="label_select_quicktext">Quick text</string>
+    <string name="menu_quicktext">Quick text</string>
+    <string name="label_add_participant_failed">Request to add participant(s) has failed</string>
+    <string name="label_group_chat">Group chat</string>
+    <string name="label_continue_chat_failed">Can\'t continue the conversation: RCS service is not available</string>
+    <string name="label_delete_chat_failed">Delete chat conversation failed</string>
+    <string name="label_delete_chat_success">Chat with contact %1$s is deleted</string>
+    <string name="label_delete_gchat_success">Group chat successfully deleted</string>
+    <string name="label_subject">Subject: </string>
+    <string name="label_subject_notif">Subject: %s</string>
+    <string name="label_max_participants">Can\'t add participants: max number of participants is reached (max=%d)</string>
+    <string name="label_sharing_warn_size">Do you confirm sending a file of %d KB?</string>
+    <string name="label_me">Me</string>
+    <string name="label_chat_empty">No chat</string>
+    <string name="label_no_participant_found">No participant found or available</string>
+    <string name="label_no_subject">no subject</string>
+    <string name="label_no_contact">&#8230;</string>
+    <string name="label_ft_thumb">Thumbnail</string>
+    <string name="menu_send_file">Send file</string>
+    <string name="label_geoloc_msg">Geoloc</string>
+    <string name="label_gc_from_subject">From: %1$s\nSubject: %2$s</string>
+    <string name="label_chat_send">Send</string>
+    <string name="label_groupchat_event">Contact has %1$s</string>
+    <string name="menu_chat_service_config">Chat service configuration</string>
+    <string name="label_ImAlwaysOn">IM always on:</string>
+    <string name="label_WarnSF">Warning SF:</string>
+    <string name="label_IsComposingTimeout">Composing timeout:</string>
+    <string name="label_MinGroupChatParticipants">Min GC participants:</string>
+    <string name="label_MaxGroupChatParticipants">MaX GC participants:</string>
+    <string name="label_MaxMsgLengthGroupChat">Max GC msg length:</string>
+    <string name="label_GroupChatSubjectMaxLength">Max GC subject length:</string>
+    <string name="label_MaxMsgLengthOneToOneChat">Max 1to1 msg length:</string>
+    <string name="label_SmsFallback">SMS Fallback:</string>
+    <string name="label_RespondToDisplayReports">Reply to display reports:</string>
+    <string name="label_MaxGeolocLabelLength">Max Geoloc label length:</string>
+    <string name="label_GeolocExpireTime">Geoloc Expire Timeout:</string>
+    <string name="label_GroupChatSupported">GC supported:</string>
+    <string name="label_NotAllowedToInitiateGroupChat">Not allowed to initiate Group Chat</string>
+
+    <!-- Sharing menu -->
+    <string name="menu_sharing">Sharing</string>
+    <string name="menu_image_sharing">Image sharing</string>
+    <string name="menu_video_sharing">Video sharing</string>
+    <string name="menu_geoloc_sharing">Geoloc sharing</string>
+    <string name="label_dial">Dial</string>
+    <string name="label_sharing_aborted">Sharing aborted (%1$s)</string>
+    <string name="label_sharing_cancelled">Sharing has been cancelled</string>
+    <string name="label_sharing_failed">Sharing failed (%1$s)</string>
+    <string name="label_sharing_rejected">Sharing rejected (%1$s)</string>
+    <string name="menu_sharing_delete">Delete</string>
+    <string name="label_delete_sharing_failed">Failed to delete sharing</string>
+    <string name="label_delete_sharing_success">Sharing successfully deleted</string>
+
+    <!-- Image sharing menu -->
+    <string name="menu_initiate_image_sharing">Initiate image sharing</string>
+    <string name="menu_image_sharing_log">Image sharing log</string>
+    <string name="label_select_picture">Select picture</string>
+    <string name="label_selected_img">Selected picture:</string>
+    <string name="title_recv_image_sharing">Image sharing invitation</string>
+    <string name="title_image_sharing">Image sharing</string>
+    <string name="label_ish_state_changed">ISH state %1$s (%2$s)</string>
+
+    <!-- Video sharing menu -->
+    <string name="menu_initiate_video_sharing">Initiate video sharing</string>
+    <string name="menu_video_sharing_log">Video sharing log</string>
+    <string name="label_initiate_sharing">Invite</string>
+    <string name="title_recv_video_sharing">Video sharing invitation</string>
+    <string name="title_video_sharing">Video sharing</string>
+    <string name="label_video_duration">Duration: %s</string>
+    <string name="label_vsh_state_changed">VSH state %1$s (%2$s)</string>
+    <string name="label_switch_camera">Switch camera</string>
+    <string name="label_vsh_uninitialized_duration">duration</string>
+    <string name="label_video_format">Format: %s</string>
+
+    <!-- Geoloc sharing menu -->
+    <string name="title_recv_geoloc_sharing">Geoloc sharing invitation</string>
+    <string name="label_select_location">Select location</string>
+    <string name="menu_initiate_geoloc_sharing">Initiate geoloc sharing</string>
+    <string name="title_geoloc_sharing">Geoloc sharing</string>
+    <string name="label_gsh_state_changed">GSH state %1$s (%2$s)</string>
+    <string name="label_gsh_default_label"></string>
+    <string name="label_gsh_default_latitude">0.0</string>
+    <string name="label_gsh_default_longitude">0.0</string>
+    <string name="label_gsh_default_accuracy">0</string>
+
+    <!-- MM session menu -->
+    <string name="menu_mm_session">Multimedia session</string>
+    <string name="menu_initiate_messaging_session">Initiate messaging session</string>
+    <string name="menu_messaging_sessions_list">Current messaging sessions</string>
+    <string name="menu_initiate_streaming_session">Initiate streaming session</string>
+    <string name="menu_streaming_sessions_list">Current streaming sessions</string>
+    <string name="label_initiate_session">Initiate session</string>
+    <string name="label_no_session">No session</string>
+    <string name="label_service_id">Service ID:</string>
+    <string name="label_session_canceled">Session initiation has been canceled</string>
+    <string name="label_session_aborted">Session aborted (%1$s)</string>
+    <string name="label_session_rejected">Session rejected (%1$s)</string>
+    <string name="label_session_failed">Session failed (%1$s)</string>
+    <string name="label_session_has_expired">Session has expired</string>
+    <string name="title_recv_messaging_session">Multimedia messaging invitation</string>
+    <string name="title_recv_streaming_session">Multimedia streaming invitation</string>
+    <string name="title_messaging_session">Messaging session</string>
+    <string name="title_streaming_session">Streaming session</string>
+    <string name="label_session">Session %s</string>
+    <string name="label_send_data">Send data</string>
+    <string name="label_recv_data">Receive data:</string>
+    <string name="label_mms_state_changed">MMS state %1$s (%2$s)</string>
+    <string name="label_mm_from_id">From: %1$s\nService ID: %2$s</string>
+
+    <!-- Geolocation push -->
+    <string name="label_select_geoloc">Select from a map</string>
+    <string name="menu_showus_map">Show us in a map</string>
+    <string name="menu_send_geoloc">Send geoloc</string>
+    <string name="title_display_geoloc">Show a geoloc</string>
+    <string name="label_geolocation_msg">Geolocation message</string>
+    <string name="label_location">Label:</string>
+    <string name="label_latitude">Latitude:</string>
+    <string name="label_longitude">Longitude:</string>
+    <string name="label_accuracy">Accuracy:</string>
+    <string name="label_select_geoloc_map">Use a long click to select a location on the map.</string>
+    <string name="label_geoloc_not_found">No geoloc info to display!</string>
+
+    <!-- Intents menu -->
+    <string name="menu_intents">Intents</string>
+    <string name="menu_apps">Applications</string>
+    <string name="label_load_chat">Load a chat</string>
+    <string name="label_initiate_chat">Start a chat</string>
+    <string name="label_load_group_chat">Load a group chat</string>
+    <string name="label_initiate_group_chat">Start a group chat</string>
+    <string name="label_load_ft">Load a file transfer</string>
+    <string name="label_initiate_ft">Start a file transfer</string>
+    <string name="label_intent_failed">Intent not found</string>
+
+    <!-- Service menu -->
+    <string name="menu_service">Service</string>
+    <string name="menu_service_status">Service status</string>
+    <string name="notification_title_rcs_service">RCS service</string>
+    <string name="menu_registration_status">Registration status</string>
+    <string name="label_service_bound">Service bound:</string>
+    <string name="label_service_activated">Service activated:</string>
+    <string name="label_service_started">Service started:</string>
+    <string name="error_service_activated">Failed to read stack activation mode</string>
+    <string name="error_service_started">Failed to read stack started status</string>
+    <string name="label_registration_status">Service registered:</string>
+    <string name="menu_service_configuration">Service configuration</string>
+    <string name="label_service_configuration_valid">Configuration valid:</string>
+    <string name="label_default_messaging_method">Messaging method:</string>
+    <string name="label_messaging_mode">Messaging mode:</string>
+    <string name="label_my_display_name">My display name:</string>
+    <string name="label_my_contact_id">My contact identifier:</string>
+    <string name="label_min_battery_level">Min battery level:</string>
+    <string name="label_service_activatation">RCS stack activation:</string>
+    <string name="label_service_activate_unchangeable">Unchangeable</string>
+    <string name="label_service_activate_changeable">Changeable</string>
+    <string name="text_service_activate_unchangeable">RCS activation cannot be changed</string>
+    <string name="ims_connected">Connected to RCS platform</string>
+    <string name="ims_disconnected">Disconnected from RCS platform</string>
+    <string name="ims_battery_disconnected">Disconnected from RCS platform (Battery low)</string>
+
+    <!-- File upload menu -->
+    <string name="menu_upload">File upload</string>
+    <string name="title_initiate_upload">File upload</string>
+    <string name="label_upload">Upload</string>
+    <string name="label_file_thumb">Thumbnail</string>
+    <string name="label_upload_failed">File upload failed</string>
+    <string name="label_upload_aborted">File upload aborted</string>
+    <string name="label_show_upload">Show upload</string>
+    <string name="label_upload_max_size">File is too big. The max size authorised is %s</string>
+    <string name="label_upload_started">STARTED</string>
+    <string name="label_upload_transferred">TRANSFERRED</string>
+    <string name="label_open_upload_failed">Show file upload failed</string>
+
+    <!-- Group delivery information menu -->
+    <string name="title_group_delivery_info">Group delivery information</string>
+    <string name="label_group_delivery_unknown_status">unknown status</string>
+    <string name="label_group_delivery_unknown_reason">unknown reason</string>
+
+    <!-- Chat message menu -->
+    <string name="menu_view_groupdelivery">View delivery information</string>
+    <string name="menu_delete_message">Delete</string>
+    <string name="menu_resend_message">Resend</string>
+    <string name="menu_revoke_message">Revoke</string>
+
+    <!-- Chat session menu -->
+    <string name="menu_delete_chat_session">Delete</string>
+    <string name="menu_open_chat_session">Open</string>
+
+    <!-- HistoryLog  menu -->
+    <string name="menu_history_log">History Log</string>
+    <string name="menu_history_log_messaging">Messaging</string>
+    <string name="menu_history_log_sharing">Sharings</string>
+    <string name="title_history_log">History Log</string>
+    <string name="title_history_log_sharing">Sharing Log</string>
+    <string name="title_history_log_messaging">Messaging Log</string>
+    <string name="title_history_log_item">History Log detail</string>
+    <string name="label_history_log_menu_filter">Change filter</string>
+    <string name="label_history_log_menu_chat">Chat</string>
+    <string name="label_history_log_menu_file_transfer">File Transfer</string>
+    <string name="label_history_log_menu_image_sharing">Image Share</string>
+    <string name="label_history_log_menu_video_sharing">Video Share</string>
+    <string name="label_history_log_menu_geoloc_sharing">Geoloc Share</string>
+    <string name="title_history_log_dialog_filter_logs_title">Filter</string>
+    <string name="label_history_log_empty">Log is empty</string>
+    <string name="label_history_log_contact_spinner_default_value">No contact filter</string>
+    <string name="label_history_log_group_conversation">Group</string>
+    <string name="label_history_log_single_conversation">One To One</string>
+    <string name="label_history_log_image_sharing">Image share</string>
+    <string name="label_history_log_video_sharing">Video share</string>
+    <string name="label_history_log_geoloc_sharing">Geoloc share</string>
+
+    <!-- States -->
+
+    <string-array name="file_transfer_states">
+        <item>INVITED</item>
+        <item>ACCEPTING</item>
+        <item>REJECTED</item>
+        <item>QUEUED</item>
+        <item>INITIATING</item>
+        <item>STARTED</item>
+        <item>PAUSED</item>
+        <item>ABORTED</item>
+        <item>TRANSFERRED</item>
+        <item>FAILED</item>
+        <item>DELIVERED</item>
+        <item>DISPLAYED</item>
+    </string-array>
+    <string-array name="file_transfer_reason_codes">
+        <item></item>
+        <item>ABORTED_BY_USER</item>
+        <item>ABORTED_BY_REMOTE</item>
+        <item>ABORTED_BY_SYSTEM</item>
+        <item>ABORTED_BY_SECONDARY_DEVICE</item>
+        <item>REJECTED_BY_TIMEOUT</item>
+        <item>REJECTED_SPAM</item>
+        <item>REJECTED_LOW_SPACE</item>
+        <item>REJECTED_MAX_SIZE</item>
+        <item>REJECTED_MAX_FILE_TRANSFERS</item>
+        <item>REJECTED_BY_USER</item>
+        <item>REJECTED_BY_REMOTE</item>
+        <item>REJECTED_MEDIA_FAILED</item>
+        <item>REJECTED_BY_SYSTEM</item>
+        <item>PAUSED_BY_SYSTEM</item>
+        <item>PAUSED_BY_USER</item>
+        <item>FAILED_INITIATION</item>
+        <item>FAILED_DATA_TRANSFER</item>
+        <item>FAILED_SAVING</item>
+        <item>FAILED_DELIVERY</item>
+        <item>FAILED_DISPLAY</item>
+        <item>FAILED_NOT_ALLOWED_TO_SEND</item>
+    </string-array>
+    <string-array name="participant_statuses">
+        <item>INVITE_QUEUED</item>
+        <item>INVITING</item>
+        <item>DISCONNECTED</item>
+        <item>INVITED</item>
+        <item>CONNECTED</item>
+        <item>DISCONNECTED</item>
+        <item>DEPARTED</item>
+        <item>FAILED</item>
+        <item>DECLINED</item>
+        <item>TIMEOUT</item>
+    </string-array>
+    <string-array name="delivery_statuses">
+        <item>UNSUPPORTED</item>
+        <item>NOT_DELIVERED</item>
+        <item>DELIVERED</item>
+        <item>DISPLAYED</item>
+        <item>FAILED</item>
+    </string-array>
+    <string-array name="delivery_reason_codes">
+        <item></item>
+        <item>FAILED_DELIVERY</item>
+        <item>FAILED_DISPLAY</item>
+    </string-array>
+    <string-array name="group_chat_states">
+        <item>INVITED</item>
+        <item>INITIATING</item>
+        <item>STARTED</item>
+        <item>ABORTED</item>
+        <item>FAILED</item>
+        <item>ACCEPTING</item>
+        <item>REJECTED</item>
+    </string-array>
+    <string-array name="group_chat_reason_codes">
+        <item></item>
+        <item>ABORTED_BY_USER</item>
+        <item>ABORTED_BY_REMOTE</item>
+        <item>ABORTED_BY_INACTIVITY</item>
+        <item>ABORTED_BY_SECONDARY_DEVICE</item>
+        <item>REJECTED_SPAM</item>
+        <item>REJECTED_MAX_CHATS</item>
+        <item>REJECTED_BY_REMOTE</item>
+        <item>REJECTED_BY_TIMEOUT</item>
+        <item>REJECTED_BY_SYSTEM</item>
+        <item>FAILED_INITIATION</item>
+    </string-array>
+    <string-array name="message_statuses">
+        <item>REJECTED</item>
+        <item>QUEUED</item>
+        <item>SENDING</item>
+        <item>SENT</item>
+        <item>FAILED</item>
+        <item>DELIVERED</item>
+        <item>DISPLAY_REPORT_REQUESTED</item>
+        <item>RECEIVED</item>
+        <item>DISPLAYED</item>
+    </string-array>
+    <string-array name="message_reason_codes">
+        <item></item>
+        <item>FAILED_SEND</item>
+        <item>FAILED_DELIVERY</item>
+        <item>FAILED_DISPLAY</item>
+        <item>REJECTED_SPAM</item>
+    </string-array>
+    <string-array name="ish_states">
+        <item>INVITED</item>
+        <item>INITIATING</item>
+        <item>STARTED</item>
+        <item>ABORTED</item>
+        <item>FAILED</item>
+        <item>TRANSFERRED</item>
+        <item>REJECTED</item>
+        <item>RINGING</item>
+        <item>ACCEPTING</item>
+    </string-array>
+    <string-array name="ish_reason_codes">
+        <item></item>
+        <item>ABORTED_BY_USER</item>
+        <item>ABORTED_BY_REMOTE</item>
+        <item>ABORTED_BY_SYSTEM</item>
+        <item>ABORTED_BY_SECONDARY_DEVICE</item>
+        <item>REJECTED_SPAM</item>
+        <item>REJECTED_BY_TIMEOUT</item>
+        <item>REJECTED_LOW_SPACE</item>
+        <item>REJECTED_ MAX_SIZE</item>
+        <item>REJECTED_MAX_SESSIONS</item>
+        <item>REJECTED_BY_USER</item>
+        <item>REJECTED_BY_REMOTE</item>
+        <item>REJECTED_BY_SYSTEM</item>
+        <item>FAILED_INITIATION</item>
+        <item>FAILED_SHARING</item>
+        <item>FAILED_SAVING</item>
+    </string-array>
+    <string-array name="vsh_states">
+        <item>INVITED</item>
+        <item>INITIATING</item>
+        <item>STARTED</item>
+        <item>ABORTED</item>
+        <item>FAILED</item>
+        <item>REJECTED</item>
+        <item>RINGING</item>
+        <item>ACCEPTING</item>
+    </string-array>
+    <string-array name="vsh_reason_codes">
+        <item></item>
+        <item>ABORTED_BY_USER</item>
+        <item>ABORTED_BY_REMOTE</item>
+        <item>ABORTED_BY_SYSTEM</item>
+        <item>ABORTED_BY_SECONDARY_DEVICE</item>
+        <item>REJECTED_SPAM</item>
+        <item>REJECTED_MAX_SESSIONS</item>
+        <item>REJECTED_BY_USER</item>
+        <item>REJECTED_BY_REMOTE</item>
+        <item>REJECTED_BY_TIMEOUT</item>
+        <item>REJECTED_BY_SYSTEM</item>
+        <item>FAILED_INITIATION</item>
+        <item>FAILED_SHARING</item>
+    </string-array>
+    <string-array name="gsh_states">
+        <item>INVITED</item>
+        <item>INITIATING</item>
+        <item>STARTED</item>
+        <item>ABORTED</item>
+        <item>FAILED</item>
+        <item>TRANSFERRED</item>
+        <item>REJECTED</item>
+        <item>RINGING</item>
+        <item>ACCEPTING</item>
+    </string-array>
+    <string-array name="gsh_reason_codes">
+        <item></item>
+        <item>ABORTED_BY_USER</item>
+        <item>ABORTED_BY_REMOTE</item>
+        <item>ABORTED_BY_SYSTEM</item>
+        <item>ABORTED_BY_SECONDARY_DEVICE</item>
+        <item>REJECTED_SPAM</item>
+        <item>REJECTED_MAX_SESSIONS</item>
+        <item>REJECTED_BY_USER</item>
+        <item>REJECTED_BY_REMOTE</item>
+        <item>REJECTED_BY_TIMEOUT</item>
+        <item>REJECTED_BY_SYSTEM</item>
+        <item>FAILED_INITIATION</item>
+        <item>FAILED_SHARING</item>
+    </string-array>
+    <string-array name="mms_states">
+        <item>INVITED</item>
+        <item>INITIATING</item>
+        <item>STARTED</item>
+        <item>ABORTED</item>
+        <item>FAILED</item>
+        <item>REJECTED</item>
+        <item>RINGING</item>
+        <item>ACCEPTING</item>
+    </string-array>
+    <string-array name="mms_reason_codes">
+        <item></item>
+        <item>ABORTED_BY_USER</item>
+        <item>ABORTED_BY_REMOTE</item>
+        <item>ABORTED_BY_SYSTEM</item>
+        <item>REJECTED_BY_INACTIVITY</item>
+        <item>REJECTED_BY_USER</item>
+        <item>REJECTED_BY_REMOTE</item>
+        <item>REJECTED_BY_TIMEOUT</item>
+        <item>REJECTED_BY_SYSTEM</item>
+        <item>FAILED_INITIATION</item>
+        <item>FAILED_SESSION</item>
+        <item>FAILED_MEDIA</item>
+    </string-array>
+    <string-array name="group_chat_event">
+        <item>JOINED</item>
+        <item>DEPARTED</item>
+    </string-array>
+    <string-array name="messaging_method">
+        <item>Automatic</item>
+        <item>RCS</item>
+        <item>Non RCS</item>
+    </string-array>
+    <string-array name="minimum_battery_level">
+        <item>Never stop</item>
+        <item>5 %</item>
+        <item>10 %</item>
+        <item>20 %</item>
+    </string-array>
+
+    <string name="title_activity_geolocdisplay">Geoloc display v2</string>
+    <string name="title_meet_asap">Meet ASAP</string>
+</resources>

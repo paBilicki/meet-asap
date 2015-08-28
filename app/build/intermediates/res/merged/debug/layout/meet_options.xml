@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mode_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your mode of transport and nature of the meeting"
+        android:textAppearance="?android:attr/textAppearanceSmall" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/transport_mode_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/g1a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="walk" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/g1a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bike" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/g1a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="public trasport" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/g1a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="plane" >
+            </RadioButton>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/meeting_nature_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/g2a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eating" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/g2a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="drinking" >
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update" >
+        </Button>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send" >
+        </Button>
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start" >
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contact_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contact invited: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/session_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="session mode: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/my_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chosen transport mode: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/chosen_nature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chosen meeting's nature: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/my_coord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your coordinates: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/inter_coord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="interlocutor's coordinates: " >
+    </TextView>
+    <TextView
+        android:id="@+id/inter_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="interlocutor's transport mode: " >
+    </TextView>
+</LinearLayout><!-- From: file:/C:/workspace/android/MeetASAP/app/src/main/res/layout/meet_options.xml -->

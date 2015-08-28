@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/ma_list"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ma_list"
+        android:text="SEND" />
+
+</RelativeLayout><!-- From: file:/C:/workspace/android/MeetASAP/app/src/main/res/layout/meet_asap_list.xml -->

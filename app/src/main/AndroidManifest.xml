@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.orangelabs.rcs.ri"
+    android:versionCode="1"
+    android:versionName="3.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.gsma.services.permission.RCS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <application
+        android:name=".RiApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.gsma.services.rcs.capability.EXTENSION"
+            android:value="ext.messaging;ext.streaming" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBx55XzmsTwFrsZ1zicjcRkarddQ6jmqJc"/>
+            <!--android:value="AIzaSyAgVlywIxPt2SfK1AfWrJFEfFyT_OtLwcQ" /> philip  -->
+        
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- MEET ASAP -->
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapcommon.MeetAsapSplashScreen"
+            android:label="Meet ASAP"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapb.MeetAsapListB"
+            android:label="Meet ASAP List" >
+        </activity>
+
+        <!-- MEET ASAP V1.0 -->
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapa.MeetAsapContactsA"
+            android:label="Meet ASAP Contacts v1.0" >
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapa.MeetAsapPreNavigationA"
+            android:label="Meet ASAP Pre-Navigation v1.0" >
+        </activity>
+        <!-- MEET ASAP V1.1 -->
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapb.MeetAsapContactsB"
+            android:label="Meet ASAP v1.1" >
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapb.MeetAsapPreNavigationB"
+            android:label="Meet ASAP Pre-Navigation v1.1" >
+        </activity>
+        <!-- MEET ASAP V1.2 -->
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapc.MeetAsapContactsC"
+            android:label="Meet ASAP Contacts v1.2" >
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapc.MeetAsapOptionsC"
+            android:label="Meet ASAP Options v1.2" >
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapc.MeetAsapPreNavigationC"
+            android:label="Meet ASAP Pre-Navigation v1.2" >
+        </activity>
+
+        <!-- Main -->
+        <activity
+            android:name=".RI"
+            android:label="@string/app_name" >
+
+            <!--
+         <intent-filter>
+         <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />     
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".AboutRI"
+            android:label="@string/menu_about" />
+
+        <!-- Intents API -->
+
+        <activity
+            android:name=".intents.TestIntentApps"
+            android:label="@string/menu_apps" />
+
+        <!-- Service API -->
+
+        <activity android:name=".service.TestServiceApi" />
+        <activity
+            android:name=".service.ServiceStatus"
+            android:label="@string/menu_service" />
+        <activity
+            android:name=".service.RegistrationStatus"
+            android:label="@string/menu_registration_status" />
+        <activity
+            android:name=".service.ServiceConfigurationActivity"
+            android:label="@string/menu_service_configuration" />
+
+        <!-- Contacts API -->
+
+        <activity android:name=".contacts.TestContactsApi" />
+        <activity
+            android:name=".contacts.RcsContactsList"
+            android:label="@string/menu_list_rcs_contacts" />
+        <activity
+            android:name=".contacts.OnlineContactsList"
+            android:label="@string/menu_list_online_contacts" />
+        <activity
+            android:name=".contacts.SupportedContactsList"
+            android:label="@string/menu_list_supported_contacts" />
+        <activity
+            android:name=".contacts.ContactVCard"
+            android:label="@string/menu_contact_vcard" />
+        <activity
+            android:name=".contacts.BlockingContact"
+            android:label="@string/menu_blocking_contact" />
+
+        <!-- Capabilities API -->
+
+        <activity android:name=".capabilities.TestCapabilitiesApi" />
+        <activity
+            android:name=".capabilities.RequestCapabilities"
+            android:label="@string/menu_capabilities" />
+        <activity
+            android:name=".capabilities.MyCapabilities"
+            android:label="@string/menu_my_capabilities" />
+        <activity
+            android:name=".capabilities.RequestAllCapabilities"
+            android:label="@string/menu_refresh_capabilities" />
+        <activity
+            android:name=".capabilities.CapabilitiesList"
+            android:label="@string/menu_capabilities_log" />
+
+        <!-- Messaging API -->
+
+        <activity android:name=".messaging.TestMessagingApi" />
+
+        <!-- File transfer API -->
+
+        <activity android:name=".messaging.filetransfer.TestFileTransferApi" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.gsma.services.rcs.action.VIEW_FILE_TRANSFER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".messaging.filetransfer.InitiateFileTransfer"
+            android:icon="@drawable/ri_quick_ft_icon"
+            android:label="@string/menu_transfer_file" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/com.gsma.services.rcs.file-transfer" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.gsma.services.rcs.action.INITIATE_ONE_TO_ONE_FILE_TRANSFER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".messaging.filetransfer.FileTransferInvitationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.filetransfer.action.NEW_FILE_TRANSFER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".messaging.filetransfer.FileTransferResumeReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.filetransfer.action.RESUME_FILE_TRANSFER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".messaging.filetransfer.ReceiveFileTransfer"
+            android:label="@string/title_file_transfer"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".messaging.filetransfer.FileTransferList"
+            android:label="@string/menu_file_transfer_log" />
+        <activity
+            android:name=".messaging.filetransfer.FileTransferServiceConfigActivity"
+            android:icon="@drawable/ri_quick_ft_icon"
+            android:label="@string/menu_ft_config" />
+
+        <service
+            android:name=".messaging.filetransfer.FileTransferIntentService"
+            android:exported="false" />
+
+        <!-- Multiple files transfer -->
+        <activity
+            android:name=".messaging.filetransfer.multi.SendMultiFileGroupChat"
+            android:label="@string/title_multi_file_transfer" />
+        <activity
+            android:name=".messaging.filetransfer.multi.SendMultiFileSingleChat"
+            android:label="@string/title_multi_file_transfer" />
+
+        <!-- Chat API -->
+
+        <activity
+            android:name=".messaging.chat.TestChatApi"
+            android:icon="@drawable/ri_quick_chat_icon" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.gsma.services.rcs.action.VIEW_ONE_TO_ONE_CHAT" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.gsma.services.rcs.action.VIEW_GROUP_CHAT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".messaging.chat.single.InitiateSingleChat"
+            android:icon="@drawable/ri_quick_chat_icon"
+            android:label="@string/menu_initiate_chat" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/com.gsma.services.rcs.im-session" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.action.SEND_ONE_TO_ONE_CHAT_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".messaging.chat.single.SingleChatInvitationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.chat.action.NEW_ONE_TO_ONE_CHAT_MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".messaging.chat.single.SingleChatView"
+            android:icon="@drawable/ri_quick_chat_icon"
+            android:label="@string/label_quick_chat"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".messaging.chat.single.SingleChatList"
+            android:icon="@drawable/ri_quick_chat_icon"
+            android:label="@string/menu_chat_log" />
+        <activity
+            android:name=".messaging.chat.ChatServiceConfigActivity"
+            android:icon="@drawable/ri_quick_chat_icon"
+            android:label="@string/menu_chat_config" />
+        <activity
+            android:name=".messaging.chat.group.InitiateGroupChat"
+            android:icon="@drawable/ri_quick_chat_icon"
+            android:label="@string/menu_initiate_group_chat" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.action.INITIATE_GROUP_CHAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".messaging.chat.group.GroupChatMessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.chat.action.NEW_GROUP_CHAT_MESSAGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".messaging.chat.group.GroupChatInvitationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.chat.action.NEW_GROUP_CHAT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".messaging.chat.group.GroupChatView"
+            android:icon="@drawable/ri_quick_chat_icon"
+            android:label="@string/title_group_chat"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".messaging.GroupDeliveryInfoList"
+            android:label="@string/title_group_delivery_info" />
+        <activity
+            android:name=".messaging.chat.group.GroupChatList"
+            android:icon="@drawable/ri_quick_chat_icon"
+            android:label="@string/menu_group_chat_log" />
+        <activity
+            android:name=".messaging.geoloc.EditGeoloc"
+            android:label="@string/menu_send_geoloc"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".messaging.geoloc.SelectGeoloc"
+            android:label="@string/label_select_geoloc" />
+        <activity
+            android:name=".messaging.geoloc.DisplayGeoloc"
+            android:label="@string/title_display_geoloc" />
+        <activity
+            android:name=".messaging.geoloc.ShowUsInMap"
+            android:label="@string/menu_showus_map" />
+        <activity
+            android:name=".messaging.chat.group.SendGroupFile"
+            android:icon="@drawable/ri_quick_ft_icon"
+            android:label="@string/menu_transfer_file" />
+        <activity
+            android:name=".messaging.chat.single.SendSingleFile"
+            android:icon="@drawable/ri_quick_ft_icon"
+            android:label="@string/menu_transfer_file" />
+
+        <service
+            android:name=".messaging.chat.single.SingleChatIntentService"
+            android:exported="false" />
+        <service
+            android:name=".messaging.chat.group.GroupChatIntentService"
+            android:exported="false" />
+
+        <!-- Sharing API -->
+
+        <activity android:name=".sharing.TestSharingApi" />
+
+        <!-- Image sharing API -->
+
+        <activity
+            android:name=".sharing.image.TestImageSharingApi"
+            android:label="@string/title_image_sharing" />
+        <activity
+            android:name=".sharing.image.InitiateImageSharing"
+            android:label="@string/menu_initiate_image_sharing" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/com.gsma.services.rcs.image-share" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".sharing.image.ImageSharingInvitationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.sharing.image.action.NEW_IMAGE_SHARING" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".sharing.image.ReceiveImageSharing"
+            android:exported="true"
+            android:label="@string/title_image_sharing" />
+        <activity
+            android:name=".sharing.image.ImageSharingList"
+            android:label="@string/menu_image_sharing_log" />
+
+        <service
+            android:name=".sharing.image.ImageSharingIntentService"
+            android:exported="false" />
+
+        <!-- Geoloc sharing API -->
+
+        <activity
+            android:name=".sharing.geoloc.TestGeolocSharingApi"
+            android:label="@string/title_geoloc_sharing" />
+        <activity
+            android:name=".sharing.geoloc.InitiateGeolocSharing"
+            android:label="@string/menu_initiate_geoloc_sharing" />
+
+        <receiver
+            android:name=".sharing.geoloc.GeolocSharingInvitationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.sharing.geoloc.action.NEW_GEOLOC_SHARING" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".sharing.geoloc.ReceiveGeolocSharing"
+            android:exported="true"
+            android:label="@string/title_geoloc_sharing" />
+
+        <service
+            android:name=".sharing.geoloc.GeolocSharingIntentService"
+            android:exported="false" />
+
+        <!-- Video sharing API -->
+
+        <activity
+            android:name=".sharing.video.TestVideoSharingApi"
+            android:label="@string/title_video_sharing" />
+        <activity
+            android:name=".sharing.video.OutgoingVideoSharing"
+            android:label="@string/menu_video_sharing" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/com.gsma.services.rcs.video-share" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".sharing.video.VideoSharingInvitationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.sharing.video.action.NEW_VIDEO_SHARING" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".sharing.video.IncomingVideoSharing"
+            android:exported="true"
+            android:label="@string/menu_video_sharing" />
+        <activity
+            android:name=".sharing.video.VideoSharingList"
+            android:label="@string/menu_video_sharing_log" />
+
+        <service
+            android:name=".sharing.video.VideoSharingIntentService"
+            android:exported="false" />
+
+        <!-- MM session API -->
+
+        <activity android:name=".extension.TestMultimediaSessionApi" />
+        <activity
+            android:name=".extension.messaging.InitiateMessagingSession"
+            android:label="@string/menu_initiate_messaging_session" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/com.gsma.services.rcs.extensions" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".extension.messaging.MessagingSessionView"
+            android:label="@string/title_messaging_session" />
+        <activity
+            android:name=".extension.messaging.MessagingSessionList"
+            android:label="@string/menu_messaging_sessions_list" />
+        <activity
+            android:name=".extension.streaming.InitiateStreamingSession"
+            android:label="@string/menu_initiate_streaming_session" />
+        <activity
+            android:name=".extension.streaming.StreamingSessionView"
+            android:label="@string/title_streaming_session" />
+        <activity
+            android:name=".extension.streaming.StreamingSessionList"
+            android:label="@string/menu_streaming_sessions_list" />
+"
+        <receiver
+            android:name=".extension.SessionInvitationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.extension.action.NEW_MESSAGING_SESSION" />
+
+                <data android:mimeType="com.gsma.services.rcs/ext.messaging" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gsma.services.rcs.extension.action.NEW_STREAMING_SESSION" />
+
+                <data android:mimeType="com.gsma.services.rcs/ext.streaming" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".extension.MultiMediaSessionIntentService"
+            android:exported="false" />
+
+        <!-- File Upload API -->
+
+        <activity
+            android:name=".upload.InitiateFileUpload"
+            android:label="@string/title_initiate_upload" />
+
+        <!-- History API -->
+        <activity
+            android:name=".history.TestHistoryLogApi"
+            android:label="@string/title_history_log" />
+        <activity
+            android:name=".history.messaging.MessagingListView"
+            android:label="@string/title_history_log_messaging" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="message/*" />
+                <data android:mimeType="multipart/*" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".history.sharing.SharingListView"
+            android:label="@string/title_history_log_sharing" />
+        <activity
+            android:name=".history.sharing.SharingDetailView"
+            android:label="@string/title_history_log_item" />
+
+        <!-- RCS settings application -->
+
+        <activity
+            android:name=".settings.SettingsDisplay"
+            android:icon="@drawable/rcs_icon"
+            android:label="@string/rcs_settings_title_settings"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.gsma.services.rcs.action.VIEW_SETTINGS" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.UserprofileSettingsDisplay"
+            android:label="@string/rcs_settings_title_userprofile_settings" />
+        <activity
+            android:name=".settings.MessagingSettingsDisplay"
+            android:label="@string/rcs_settings_title_messaging_settings" />
+        <activity
+            android:name=".settings.AboutSettings"
+            android:label="@string/rcs_settings_title_about" />
+        <activity
+            android:name=".BasicMapDemoV1Activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.BasicMapDemoV2Activity"
+            android:label="@string/title_activity_geolocdisplay" >
+        </activity>
+    </application>
+
+</manifest>

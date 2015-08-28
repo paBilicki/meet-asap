@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/meet_remote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remote Contact: " />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/meet_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="location: " />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/meet_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="your coordinates: " />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/meet_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="interlocutor&apos;s coordinates" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/meet_refresh"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="REFRESH" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/meet_send"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="SEND" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout><!-- From: file:/C:/workspace/android/MeetASAP/app/src/main/res/layout/meet_prenavigation_screen.xml -->
