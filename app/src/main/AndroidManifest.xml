@@ -107,7 +107,15 @@
          <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />     
-            </intent-filter>
+            </intent-filter>
+
+
+
+
+
+
+
+
             -->
         </activity>
         <activity
@@ -502,7 +510,19 @@
         <activity
             android:name=".extension.streaming.StreamingSessionList"
             android:label="@string/menu_streaming_sessions_list" />
-"
+"
+
+
+
+
+
+
+
+
+
+
+
+
         <receiver
             android:name=".extension.SessionInvitationReceiver"
             android:exported="true" >
