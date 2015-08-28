@@ -29,7 +29,7 @@ public class MeetAsapContactsC extends ListActivity {
 		ContactListAdapter adapter;
 		public final static String EXTRA_CONTACT = "contact";
 		public final static String EXTRA_SESSION_MODE = "incoming";
-
+		// github test
 		/**
 		 * API connection manager
 		 */
@@ -124,7 +124,7 @@ public class MeetAsapContactsC extends ListActivity {
 			Log.d("meetAsapError", "MeetAsapContactsB - remoteContact: " + name);
 			newint.putExtra(EXTRA_SESSION_MODE, sessionMode);
 			startActivity(newint);
-			
+			Log.d("GITHUB", "why it doesn't work!!!!!");
 			super.onListItemClick(l, v, position, id);
 		}
 

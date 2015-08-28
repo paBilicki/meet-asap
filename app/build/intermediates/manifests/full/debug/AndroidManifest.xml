@@ -65,6 +65,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapb.MeetAsapListB"
+            android:label="Meet ASAP List" >
+        </activity>
 
         <!-- MEET ASAP V1.0 -->
         <activity
