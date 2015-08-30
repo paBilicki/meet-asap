@@ -196,11 +196,11 @@ public final class R {
 		public static final int wallet_buy_button_place_holder = 0x7f07003a;
 	}
 	public static final class style {
-		public static final int Theme_IAPTheme = 0x7f0800bb;
-		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0800c3;
-		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0800c4;
-		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0800c5;
-		public static final int WalletFragmentDefaultStyle = 0x7f0800c6;
+		public static final int Theme_IAPTheme = 0x7f0800bd;
+		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0800c5;
+		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0800c6;
+		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0800c7;
+		public static final int WalletFragmentDefaultStyle = 0x7f0800c8;
 	}
 	public static final class styleable {
 		public static final int[] AdsAttrs = { 0x7f010026, 0x7f010027, 0x7f010028 };

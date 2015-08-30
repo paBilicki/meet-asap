@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/meet_refresh"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="REFRESH" />
+
+
+        <Button
+            android:id="@+id/meet_send"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="SEND" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/session_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="session ID: "></TextView>
+        <TextView
+            android:id="@+id/remote_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remote contact: "></TextView>
+
+        <TextView
+            android:id="@+id/session_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Session Mode: "></TextView>
+
+        <TextView
+            android:id="@+id/chosen_nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meeting's nature: "></TextView>
+
+        <TextView
+            android:id="@+id/my_coord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My coordinates: "></TextView>
+
+        <TextView
+            android:id="@+id/my_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My transport mode: "></TextView>
+
+        <TextView
+            android:id="@+id/inter_coord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interlocutor's coordinates: "></TextView>
+
+        <TextView
+            android:id="@+id/inter_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interlocutor's transport mode: "></TextView>
+    </LinearLayout>
+</LinearLayout>
