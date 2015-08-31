@@ -58,10 +58,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.orangelabs.rcs.ri.meetasapb.MeetAsapListB"
-            android:label="Meet ASAP List" >
-        </activity>
 
         <!-- MEET ASAP V1.0 -->
         <activity
@@ -99,6 +95,24 @@
             android:label="Meet ASAP Pre-Navigation v1.2" >
         </activity>
 
+        <!-- MEET ASAP V2.0 -->
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapContactsD"
+            android:label="Meet ASAP Contacts v2.0" >
+            <category android:name="android.intent.category.LAUNCHER" />
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapOptionsD"
+            android:label="Meet ASAP Options v2.0" >
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapRecommandationsListD"
+            android:label="Meet ASAP Options v2.0" >
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapPreNavigationD"
+            android:label="Meet ASAP Pre-Navigation v2.0" >
+        </activity>
         <!-- Main -->
         <activity
             android:name=".RI"

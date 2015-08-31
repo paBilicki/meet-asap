@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dip" >
+
+    <ListView
+        android:id="@+id/recommandations_list"
+        android:layout_width="fill_parent"
+        android:layout_height="430dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <TextView
+        android:id="@+id/rec_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have sent: " >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rec_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have received: " >
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:id="@+id/rec_btn" />
+
+</LinearLayout>
