@@ -31,7 +31,7 @@ public class MeetAsapRecommandationsListC extends ListActivity {
 		/* Set layout */
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 			
-		String[] items = { "Pizza Hut", "McDonald", "Quick", "KFC", "new resto"};
+		String[] items = { "Pizza Hut", "McDonald", "Quick", "KFC"};
 		setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items));
 
 		}

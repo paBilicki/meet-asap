@@ -95,7 +95,6 @@ public class MeetAsapPreNavigationB extends FragmentActivity implements
 				"MeetAsapPreNavigationB - Map created! Creating TVs...");
 		meetTextView = (TextView) findViewById(R.id.meet_remote);
 		meetShow = (TextView) findViewById(R.id.meet_my);
-		meetLocation = (TextView) findViewById(R.id.meet_location);
 		meetReceived = (TextView) findViewById(R.id.meet_received);
 
 		Log.d("meetAsapError",
@@ -145,7 +144,7 @@ public class MeetAsapPreNavigationB extends FragmentActivity implements
 	@Override
 	public void onMapReady(GoogleMap map) {
 		meetmap = map;
-		meetmap.setMyLocationEnabled(true);
+		//meetmap.setMyLocationEnabled(true);
 	}
 
 	private void updateMap() {
@@ -345,8 +344,7 @@ public class MeetAsapPreNavigationB extends FragmentActivity implements
 	private OnClickListener refreshButtonListener = new OnClickListener() {
 		public void onClick(View v) {
 			updateMyCoordinates();
-			meetLocation.setText("location: " + testlat + "," + testlongit
-					+ " acc: " + testaccu);
+
 			meetShow.setText("your coordinates: " + myCoordinates);
 			String interlocutorsCoordinates = String.valueOf(receivedLatitude)
 					+ ", " + String.valueOf(receivedLongitude);

@@ -4,6 +4,7 @@ import com.orangelabs.rcs.ri.R;
 import com.orangelabs.rcs.ri.meetasapa.MeetAsapContactsA;
 import com.orangelabs.rcs.ri.meetasapb.MeetAsapContactsB;
 import com.orangelabs.rcs.ri.meetasapc.MeetAsapContactsC;
+import com.orangelabs.rcs.ri.meetasapd.MeetAsapContactsD;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -35,6 +36,10 @@ public class MeetAsapSplashScreen extends Activity {
 				} else if (MeetAsapSplashScreen.MEET_ASAP_VERSION == "C") {
 					intent = new Intent(MeetAsapSplashScreen.this,
 							MeetAsapContactsC.class);
+					Log.d("meetAsapError", "versioning SplashScreen: " + MeetAsapSplashScreen.MEET_ASAP_VERSION );
+				} else if (MeetAsapSplashScreen.MEET_ASAP_VERSION == "D") {
+					intent = new Intent(MeetAsapSplashScreen.this,
+							MeetAsapContactsD.class);
 					Log.d("meetAsapError", "versioning SplashScreen: " + MeetAsapSplashScreen.MEET_ASAP_VERSION );
 				} else {
 					Log.d("meetAsapError", "versioning doesn't work - SplashScreen");

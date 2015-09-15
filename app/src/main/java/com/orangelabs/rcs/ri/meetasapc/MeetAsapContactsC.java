@@ -68,7 +68,7 @@ public class MeetAsapContactsC extends ListActivity {
 		protected void onResume() {
 			super.onResume();
 			if (!mExitOnce.isLocked()) {
-				Log.d("meetAsapError", "MeetAsapContactsB - Update the list of RCS contacts");
+				Log.d("meetAsapError", "MeetAsapContactsD - Update the list of RCS contacts");
 				// Update the list of RCS contacts
 				updateList();
 			}
@@ -78,7 +78,7 @@ public class MeetAsapContactsC extends ListActivity {
 		 * Update the list
 		 */
 		private void updateList() {
-			Log.d("meetAsapError", "MeetAsapContactsB - updating the list");
+			Log.d("meetAsapError", "MeetAsapContactsD - updating the list");
 			try {
 				// Get list of RCS contacts who are online
 				Set<RcsContact> onlineContacts = mCnxManager.getContactApi()
@@ -113,18 +113,17 @@ public class MeetAsapContactsC extends ListActivity {
 		protected void onListItemClick(ListView l, View v, int position, long id) {
 			RcsContact remoteContact = (RcsContact) contacts.get(position);
 			String name = remoteContact.getContactId().toString();
-			Toast.makeText(getBaseContext(), name, Toast.LENGTH_SHORT).show();
+			Toast.makeText(getBaseContext(),"you have successfully invited: " +  name, Toast.LENGTH_SHORT).show();
 
 			String sessionMode = "outgoing";
 						
-			Log.d("meetAsapError", "MeetAsapContactsB - putting extras");
+			Log.d("meetAsapError", "MeetAsapContactsC - putting extras");
 			Intent newint = new Intent(MeetAsapContactsC.this,
 					MeetAsapOptionsC.class);
-			newint.putExtra(MeetAsapContactsB.EXTRA_CONTACT,(Parcelable) remoteContact.getContactId());
-			Log.d("meetAsapError", "MeetAsapContactsB - remoteContact: " + name);
+			newint.putExtra(MeetAsapContactsC.EXTRA_CONTACT,(Parcelable) remoteContact.getContactId());
+			Log.d("meetAsapError", "MeetAsapContactsC - remoteContact: " + name);
 			newint.putExtra(EXTRA_SESSION_MODE, sessionMode);
 			startActivity(newint);
-			Log.d("GITHUB", "why it doesn't work!!!!!");
 			super.onListItemClick(l, v, position, id);
 		}
 

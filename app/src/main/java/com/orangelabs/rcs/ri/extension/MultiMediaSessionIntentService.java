@@ -22,6 +22,8 @@ import com.orangelabs.rcs.ri.meetasapb.MeetAsapPreNavigationB;
 import com.orangelabs.rcs.ri.meetasapc.MeetAsapContactsC;
 import com.orangelabs.rcs.ri.meetasapc.MeetAsapOptionsC;
 import com.orangelabs.rcs.ri.meetasapcommon.MeetAsapSplashScreen;
+import com.orangelabs.rcs.ri.meetasapd.MeetAsapContactsD;
+import com.orangelabs.rcs.ri.meetasapd.MeetAsapOptionsD;
 import com.orangelabs.rcs.ri.utils.LogUtils;
 import com.orangelabs.rcs.ri.utils.RcsDisplayName;
 import com.orangelabs.rcs.ri.utils.Utils;
@@ -171,6 +173,11 @@ public class MultiMediaSessionIntentService extends IntentService {
 				invitation.putExtra(MeetAsapContactsC.EXTRA_CONTACT,
 						(Parcelable) contact);
 				title = "Meet ASAP 1.2";
+			} else if (version == "D") {
+				invitation.setClass(this, MeetAsapOptionsD.class);
+				invitation.putExtra(MeetAsapContactsD.EXTRA_CONTACT,
+						(Parcelable) contact);
+				title = "Meet ASAP 2.0";
 			} else {
 				invitation.setClass(this, MessagingSessionView.class);
 				invitation.putExtra(MeetAsapContactsB.EXTRA_CONTACT,
