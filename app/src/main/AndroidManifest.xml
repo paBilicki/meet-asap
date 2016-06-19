@@ -98,20 +98,41 @@
         <!-- MEET ASAP V2.0 -->
         <activity
             android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapContactsD"
-            android:label="Meet ASAP Contacts v2.0" >
+            android:label="Meet ASAP Contacts v3.0" >
             <category android:name="android.intent.category.LAUNCHER" />
         </activity>
         <activity
             android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapOptionsD"
-            android:label="Meet ASAP Options v2.0" >
+            android:label="Meet ASAP Options v3.0" >
         </activity>
         <activity
             android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapRecommandationsListD"
-            android:label="Meet ASAP Options v2.0" >
+            android:label="Meet ASAP Recommandations List v3.0" >
         </activity>
+
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.MeetASAPRecommandationsD"
+            android:label="Meet ASAP Recommandations v3.0" >
+        </activity>
+
         <activity
             android:name="com.orangelabs.rcs.ri.meetasapd.MeetAsapPreNavigationD"
-            android:label="Meet ASAP Pre-Navigation v2.0" >
+            android:label="Meet ASAP Pre-Navigation v3.0" >
+        </activity>
+
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.ServerPlacePicker"
+            android:label="Meet ASAP Pre-Navigation v3.0" >
+        </activity>
+
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.RecommendationsList"
+            android:label="Meet ASAP Pre-Navigation v3.0" >
+        </activity>
+
+        <activity
+            android:name="com.orangelabs.rcs.ri.meetasapd.PlacesDetails"
+            android:label="Meet ASAP Pre-Navigation v3.0" >
         </activity>
         <!-- Main -->
         <activity
@@ -527,17 +548,6 @@
             android:name=".extension.streaming.StreamingSessionList"
             android:label="@string/menu_streaming_sessions_list" />
 "
-
-
-
-
-
-
-
-
-
-
-
 
         <receiver
             android:name=".extension.SessionInvitationReceiver"
