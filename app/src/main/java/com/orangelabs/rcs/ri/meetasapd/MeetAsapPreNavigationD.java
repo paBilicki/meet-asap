@@ -41,9 +41,10 @@ import com.orangelabs.rcs.ri.utils.Utils;
 public class MeetAsapPreNavigationD extends FragmentActivity implements
         OnMapReadyCallback {
 
-    private LatLng myPosition, iPosition;
+
     private MeetAsapGpsTracker GPS;
     private GoogleMap meetmap;
+    private LatLng myPosition, iPosition;
     Marker myMarker, interMarker, middleMarker;
     Polyline myPolyline;
 

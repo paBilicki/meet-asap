@@ -28,7 +28,7 @@ public class MeetAsapContactsD extends ListActivity {
 		ContactListAdapter adapter;
 		public final static String EXTRA_CONTACT = "contact";
 		public final static String EXTRA_SESSION_MODE = "incoming";
-		// github test
+
 		/**
 		 * API connection manager
 		 */
@@ -42,7 +42,7 @@ public class MeetAsapContactsD extends ListActivity {
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
-
+			Log.d("meetAsapError", "ContactsD - onCreate");
 			// Set layout
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 			setContentView(R.layout.contacts_rcs_list);
@@ -67,7 +67,6 @@ public class MeetAsapContactsD extends ListActivity {
 		protected void onResume() {
 			super.onResume();
 			if (!mExitOnce.isLocked()) {
-				Log.d("meetAsapError", "MeetAsapContactsD - Update the list of RCS contacts");
 				// Update the list of RCS contacts
 				updateList();
 			}
@@ -77,7 +76,7 @@ public class MeetAsapContactsD extends ListActivity {
 		 * Update the list
 		 */
 		private void updateList() {
-			Log.d("meetAsapError", "MeetAsapContactsD - updating the list");
+			Log.d("meetAsapError", "ContactsD - updating the list");
 			try {
 				// Get list of RCS contacts who are online
 				Set<RcsContact> onlineContacts = mCnxManager.getContactApi()
@@ -111,16 +110,16 @@ public class MeetAsapContactsD extends ListActivity {
 		@Override
 		protected void onListItemClick(ListView l, View v, int position, long id) {
 			RcsContact remoteContact = (RcsContact) contacts.get(position);
-			String name = remoteContact.getContactId().toString();
-			Toast.makeText(getBaseContext(), name, Toast.LENGTH_SHORT).show();
+			String name = remoteContact.getDisplayName().toString();
+			Toast.makeText(getBaseContext(),"you have successfully invited: " +  name, Toast.LENGTH_SHORT).show();
 
 			String sessionMode = "outgoing";
 						
-			Log.d("meetAsapError", "MeetAsapContactsD - putting extras");
+			Log.d("meetAsapError", "ContactsD - putting extras");
 			Intent newint = new Intent(MeetAsapContactsD.this,
 					MeetAsapOptionsD.class);
 			newint.putExtra(MeetAsapContactsD.EXTRA_CONTACT,(Parcelable) remoteContact.getContactId());
-			Log.d("meetAsapError", "MeetAsapContactsD - remoteContact: " + name);
+			Log.d("meetAsapError", "ContactsD - remoteContact: " + name);
 			newint.putExtra(EXTRA_SESSION_MODE, sessionMode);
 			startActivity(newint);
 			super.onListItemClick(l, v, position, id);
