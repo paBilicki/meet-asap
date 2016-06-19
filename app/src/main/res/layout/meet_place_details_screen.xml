@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/meet_btn_back"
+            android:src="@drawable/btn_back"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:id="@+id/meet_btn_path"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_path"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:id="@+id/meet_btn_navigate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_nav_walk"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/restaurant"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Place name"
+                android:id="@+id/place_name"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/place_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="address: "
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"></TextView>
+
+        <TextView
+            android:id="@+id/place_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rating: "
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"></TextView>
+
+        <TextView
+            android:id="@+id/place_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone nr: "
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:id="@+id/my_mode"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:src="@drawable/me_walk" />
+
+            <TextView
+                android:id="@+id/my_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="my distance: "
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"></TextView>
+
+            <ImageView
+                android:id="@+id/int_mode"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/int_walk"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp" />
+
+
+            <TextView
+                android:id="@+id/int_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inter distance: "
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"></TextView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

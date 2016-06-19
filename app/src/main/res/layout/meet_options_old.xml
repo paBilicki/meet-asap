@@ -8,10 +8,7 @@
         android:id="@+id/mode_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="30dp"
+        android:layout_margin="15dp"
         android:text="Choose your mode of transport and nature of the meeting"
         android:textAppearance="?android:attr/textAppearanceSmall"></TextView>
 
@@ -43,7 +40,7 @@
                 android:id="@+id/g1a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="public transport"></RadioButton>
+                android:text="public trasport"></RadioButton>
 
             <RadioButton
                 android:id="@+id/g1a4"
@@ -108,97 +105,92 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
-        <TableLayout
+        <Button
+            android:id="@+id/start_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left|top">
+            android:text="start"></Button>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/chosen_nature"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="2dp"
-                    android:text="Nature of the meeting: "></TextView>
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/my_mode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="2dp"
-                    android:text="yours transport mode: "></TextView>
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/inter_mode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="2dp"
-                    android:text="interlocutor's transport mode: "></TextView>
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/distance_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="2dp"
-                    android:text="Distance between you: "></TextView>
-            </TableRow>
-
-        </TableLayout>
-
+        <Button
+            android:id="@+id/list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="list"></Button>
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/list_btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="right"
-        android:src="@drawable/btn_list_no"
-        android:layout_marginRight="20dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/session_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="session mode: "></TextView>
+
+        <TextView
+            android:id="@+id/my_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="chosen transport mode: "></TextView>
+
+        <TextView
+            android:id="@+id/chosen_nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="chosen meeting's nature: "></TextView>
+
+        <TextView
+            android:id="@+id/my_coord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="your coordinates: "></TextView>
+
+        <TextView
+            android:id="@+id/inter_coord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="interlocutor's coordinates: "></TextView>
+
+        <TextView
+            android:id="@+id/inter_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="interlocutor's transport mode: "></TextView>
+
+        <TextView
+            android:id="@+id/info_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
 
 </LinearLayout>

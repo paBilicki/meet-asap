@@ -27,15 +27,6 @@
         <TableRow>
 
             <TextView
-                android:id="@+id/meet_location"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="location: " />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
                 android:id="@+id/meet_my"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

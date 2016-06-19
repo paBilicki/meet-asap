@@ -5,31 +5,30 @@
     android:orientation="vertical"
     android:paddingTop="10dip" >
 
+    <ListView
+        android:id="@+id/recommandations_list"
+        android:layout_width="fill_parent"
+        android:layout_height="430dp"
+        android:scrollbarStyle="outsideOverlay" />
+
     <TextView
-        android:id="@+id/test_1"
+        android:id="@+id/rec_sent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1. loading... " >
+        android:text="I have sent: " >
     </TextView>
 
     <TextView
-        android:id="@+id/test_2"
+        android:id="@+id/rec_received"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2. loading... " >
-    </TextView>
-
-    <TextView
-        android:id="@+id/test_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3. loading... " >
+        android:text="I have received: " >
     </TextView>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send"
-        android:id="@+id/test_send_btn" />
+        android:text="update"
+        android:id="@+id/rec_btn" />
 
 </LinearLayout>
